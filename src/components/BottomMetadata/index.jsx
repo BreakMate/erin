@@ -15,7 +15,7 @@ const BottomMetadata = ({ video, extraMetadata }) => {
   return (
     <div className="bottom-metadata">
       {_metadata.channel_image && _metadata.channel_name && (
-        <div className="channel" onClick={() => _metadata.channel_link && window.open(_metadata.channel_link, "_blank")}>
+        <div className="channel" onClick={() => _metadata.channel_link && window.open(_metadata.channel_link, "_self")}>
           <div className="avatar-wrapper">
             <img src={_metadata.channel_image} alt={_metadata.channel_name} />
           </div>

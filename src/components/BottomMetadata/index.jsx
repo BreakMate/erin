@@ -28,10 +28,6 @@ const BottomMetadata = ({ video, extraMetadata }) => {
           dangerouslySetInnerHTML={{ __html: _metadata.video_caption }}
         ></div>
       )}
-      <div className="video-title" onClick={handleClick}>
-        <FontAwesomeIcon icon={faFilm} style={{ width: "30px" }} />
-        <p>{_metadata.video_title}</p>
-      </div>
     </div>
   );
 };

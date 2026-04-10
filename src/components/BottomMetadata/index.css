@@ -44,8 +44,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 72px;
-  height: 72px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   overflow: hidden;
   background: #555;
@@ -56,7 +56,7 @@
 }
 .bottom-metadata .channel > span {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 .bottom-metadata .video-caption {

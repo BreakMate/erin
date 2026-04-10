@@ -73,3 +73,7 @@
 body.fullscreen .bottom-metadata {
   bottom: 0;
 }
+
+.channel {
+  cursor: pointer;
+}

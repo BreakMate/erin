@@ -736,6 +736,7 @@ const App = () => {
                   <BottomMetadata
                     video={visibleVideos[currentVideoIndex]}
                     extraMetadata={currentVideoMetadata}
+                    secureHash={secureHash}
                   />
                 )}
                 <BottomNavbar

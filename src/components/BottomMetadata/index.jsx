@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.css";
 import { faFilm } from "@fortawesome/free-solid-svg-icons";
 
-const BottomMetadata = ({ video, extraMetadata }) => {
+const BottomMetadata = ({ video, extraMetadata, secureHash }) => {
   let _metadata = { video_title: video.title };
   _metadata = { ..._metadata, ...extraMetadata };
 
@@ -17,7 +17,7 @@ const BottomMetadata = ({ video, extraMetadata }) => {
       {_metadata.channel_image && _metadata.channel_name && (
         <div className="channel" onClick={() => _metadata.channel_link && window.open(_metadata.channel_link, "_self")}>
           <div className="avatar-wrapper">
-            <img src={_metadata.channel_image} alt={_metadata.channel_name} />
+            <img src={`${_metadata.channel_image}${secureHash ? `?hash=${secureHash}` : ""}`} alt={_metadata.channel_name} />
           </div>
           <span>{_metadata.channel_name}</span>
         </div>

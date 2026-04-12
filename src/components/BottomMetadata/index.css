@@ -38,6 +38,8 @@
   gap: 6px;
   padding-left: 8px;
   margin-bottom: 12px;
+  pointer-events: all;
+  cursor: pointer;
 }
 
 .bottom-metadata .channel .avatar-wrapper {

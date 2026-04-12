@@ -580,6 +580,7 @@ const App = () => {
           videos={visibleVideos}
           onFocusVideo={handleVideoFocus}
           onFinishVideo={handleVideoFinish}
+          onTogglePlayPause={togglePlayPause}
         />
       );
     },

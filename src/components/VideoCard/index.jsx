@@ -4,7 +4,7 @@ import { useCallback, useRef } from "react";
 // Assets
 import "./index.css";
 
-const VideoCard = ({ index, video, isLoaded, refForwarder, onDoubleClick, onTogglePlayPause }) => {
+const VideoCard = ({ index, video, isLoaded, refForwarder, onDoubleClick }) => {
   const videoRef = useRef(null);
 
   // Handle click
@@ -40,8 +40,6 @@ const VideoCard = ({ index, video, isLoaded, refForwarder, onDoubleClick, onTogg
         playsInline={true}
         muted={true}
         preload="auto"
-        onClick={onTogglePlayPause}
-        onDoubleClick={handleDoubleClick}
       />
     </div>
   );

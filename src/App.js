@@ -1,4 +1,3 @@
-// Dependencies
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 // Components
@@ -580,7 +579,6 @@ const App = () => {
           videos={visibleVideos}
           onFocusVideo={handleVideoFocus}
           onFinishVideo={handleVideoFinish}
-          onTogglePlayPause={togglePlayPause}
         />
       );
     },
